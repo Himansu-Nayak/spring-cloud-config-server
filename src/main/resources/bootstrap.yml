@@ -1,7 +1,18 @@
-#Server port
 server:
   port: 8888
-#Git repo location.
-spring.cloud.config.server.git.uri=${USERPROFILE}/Desktop/config-server-repo
-#Disable security of the Management endpoint
-management.security.enabled=false
+
+spring:
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        git:
+          uri: https://github.com/Himansu-Nayak/spring-boot-config
+          username: himansuxnayak@gmail.com
+          password: Sweet$cute1709
+          refreshRate: 0
+      fail-fast: true
+
+management:
+  security:
+    enabled: false
