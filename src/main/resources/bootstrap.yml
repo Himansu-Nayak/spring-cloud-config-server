@@ -9,7 +9,7 @@ spring:
         git:
           uri: https://github.com/Himansu-Nayak/spring-boot-config
           username: himansuxnayak@gmail.com
-          password: Sweet$cute1709
+          password: 
           refreshRate: 0
       fail-fast: true
 
